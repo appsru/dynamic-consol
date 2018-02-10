@@ -1,0 +1,119 @@
+<!DOCTYPE=html />
+<html>
+ <head>
+  <title>Console Message For A COOL COMPANY looking to hire you</title>
+
+
+  <!-- open in any browser that supports console.log() -->
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<script language="JavaScript">
+num="";
+function msg1(){
+  $("#start").val("Enjoy the show");
+  setTimeout("msg1a()",1500);
+}
+function msg1a(){
+  $("#start").slideUp(1000);
+  l1 = 'Hi COOL COMPANY,';
+  l2 =	'';
+  console.log('%c '+l1, 'font-size:24px; color: red; display: block;');
+  console.log(l2);
+  setTimeout("msg1b()",1500);
+}
+function msg1b(){
+  l3 =	'when Joe from IT Recruiters contacted me regarding your opportunity and told me about the company, I';
+  l4 =	'was super delighted at the chance to work within a great company!';
+  console.log('%c '+l3, 'font-size:14px;');
+  console.log('%c '+l4, 'font-size:14px;');
+  setTimeout("msg2()",6500);
+}
+function msg2(){
+  l0 =	"";
+  l1 = 	"I'm a JS dev from way back and love JQuery. I also love split testing and think it is";
+  l2 =	"paramount to getting the best results for any campaign you're working on.";
+  console.log('%c '+l0, 'font-size:14px;');
+  console.log('%c '+l1, 'font-size:14px;');
+  console.log('%c '+l2, 'font-size:14px;');
+  setTimeout("msg3()",5500);
+}
+function msg3(){
+  l0 =	"";
+  l1 = 	"I can help you with";
+  console.log('%c '+l0, 'font-size:14px;');
+  console.log('%c '+l1, 'font-size:14px;');
+  setTimeout("msg4(0)",6500);
+}
+function msg4(num){
+  if(num<9){
+    if(num==0){ l0 = 	" ";  } else
+    if(num==1){ l0 = 	" --> Client facing ";  } else
+    if(num==2){ l0 = 	" --> JS, JQuery, React/Redux, et al";  } else
+    if(num==3){ l0 = 	" --> PHP & Wordpress";   } else
+    if(num==4){ l0 = 	" --> Graphics"; } else
+    if(num==5){ l0 = 	" --> Video production"; } else
+    if(num==6){ l0 = 	" --> ...interactive video :) "; } else
+    if(num==7){ l0 = 	" --> Marketing, Strategy, SEO, SEM";  } else
+    if(num==8){ l0 = 	" --> and plenty more"; }
+    console.log('%c '+l0, 'font-size:14px;');
+    setTimeout("msg4(num++)",1500);
+  } else {
+    msg5();
+  }
+}
+function msg5(){
+  setTimeout("msg5a()",2500);
+}
+function msg5a(){
+  l0 =	"";
+  l1 = 	"I very much hope to get the opportunity to work with you";
+  console.log(l0);
+  console.log('%c '+l1, 'font-size:14px;');
+  setTimeout("msg6()",4500);
+}
+function msg6(){
+  l0 =	"";
+  l1 = 	"Thanks guys!";
+  console.log(l0);
+  console.log('%c '+l1, 'font-size:24px;');
+  setTimeout("msg7()",2500);
+}
+function msg7(){
+  l0 =	"";
+  l1 = 	"Steve";
+  console.log(l0);
+  console.log('%c '+l1, 'font-size:18px;');
+  setTimeout("reloadMe()",4500);
+}
+function reloadMe(){
+  location.reload();
+  }
+</script>
+<style>
+ .main{
+ width:800px;
+ margin:auto auto;
+ }
+ .center{
+ text-align:center;
+ }
+</style>
+</head>
+<body>
+
+<div class="col main">
+<h1 class="center">Hi Web Marketing ROI</h1>
+<h3 class="center">Open the console and click Start:)</h3>
+<input type="button" id=start class="btn btn-lg btn-primary btn-block" style="display:inline;" onclick="msg1()" value="Start">
+
+</div>
+
+</body>
+</html>
