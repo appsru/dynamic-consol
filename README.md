@@ -1,4 +1,4 @@
-# dynamic-consol
+# dynamic-console
 
 Some fun with javascript, jQuery and the console log.
 
